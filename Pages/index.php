@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../style.CSS" />
+    <link rel="stylesheet" href="../carrito.css">
 </head>
 
 <body>
@@ -26,15 +27,19 @@
 
             <!-- contenedor de sugerencias -->
             <div id="sugerencias" class="sugerencias"></div>
+            <!-- Ícono del carrito -->
+            <img id="carrito-icon" src="../Recursos/iage.png" alt="Carrito" class="carrito-icon">
 
-            <div class="acciones">
-                <a href="ver_carrito.php" class="btn-icono carrito" aria-label="Carrito"></a>
+            <!-- Carrito flotante -->
+            <div id="carrito-flotante" class="carrito-flotante">
+                <h4>Carrito</h4>
+                <div id="carrito-items"></div>
+                <p id="carrito-total">Total: $0</p>
             </div>
-        </div>
     </header>
 
     <!-- Menú -->
-   <nav class="menu">
+    <nav class="menu">
         <div class="contenedor fila-menu">
             <a href="index.php" class="link-menu">Inicio</a>
             <a href="productos.php" class="link-menu">Productos</a>
@@ -127,7 +132,59 @@
             </div>
         </div>
     </footer>
+    <!-- Script carrito -->
+    <script>
+        let carrito = [];
+
+        // Mostrar/ocultar carrito al hacer clic
+        document.getElementById("carrito-icon").addEventListener("click", () => {
+            const c = document.getElementById("carrito-flotante");
+            c.style.display = c.style.display === "none" || c.style.display === "" ? "block" : "none";
+        });
+
+        function agregarAlCarrito(id, nombre, precio, imagen) {
+            carrito.push({
+                id,
+                nombre,
+                precio,
+                imagen
+            });
+            actualizarCarrito();
+        }
+
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const cont = document.getElementById("carrito-items");
+            const totalTexto = document.getElementById("carrito-total");
+
+            cont.innerHTML = "";
+            let total = 0;
+
+            carrito.forEach((item, index) => {
+                total += item.precio;
+
+                cont.innerHTML += `
+    <div class="carrito-item">
+        <img src="../imagenes/${item.imagen}" class="carrito-img">
+        <div>
+            <p class="carrito-nombre">${item.nombre}</p>
+            <p class="carrito-precio">$${item.precio}</p>
+            <button class="btn-eliminar" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+        </div>
+    </div>
+    `;
+            });
+
+
+            totalTexto.innerText = "Total: $" + total;
+        }
+    </script>
+    <script src="../JS/buscador.js"></script>
 </body>
-<script src="../JS/buscador.js"></script>
+
 
 </html>
