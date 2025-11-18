@@ -45,8 +45,6 @@
             <a href="index.php">Inicio</a>
             <a href="productos.php">Productos</a>
             <a href="soporte.html">Soporte</a>
-            <a href="login.php">Iniciar sesión</a>
-            <a href="register.php">Registrarse</a>
         </div>
     </nav>
 

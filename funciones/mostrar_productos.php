@@ -17,6 +17,8 @@ if ($buscar) {
 
 $result = $conn->query($sql);
 
+// Muestra las tarjetas de los productos, con un while
+
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo '<article class="tarjeta">';

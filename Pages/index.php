@@ -14,28 +14,23 @@
 <body>
     <!-- Barra superior -->
     <header class="barra">
-        <div class="contenedor fila-barra">
-            <div class="logo">
-                <span class="logo-fuerte">TECH</span>
-                <span class="logo-naranja">ORANGE</span>
-            </div>
+      <div class="contenedor fila-barra">
+        <div class="logo">
+          <span class="logo-fuerte">TECH</span>
+          <span class="logo-naranja">ORANGE</span>
+        </div>
 
-            <div class="buscador">
-                <input type="text" id="inputBuscar" placeholder="Buscar productos..." aria-label="Buscar productos" />
-                <button class="btn-buscar" aria-label="Buscar"></button>
-            </div>
+        <!-- contenedor de sugerencias -->
+        <div id="sugerencias" class="sugerencias"></div>
 
-            <!-- contenedor de sugerencias -->
-            <div id="sugerencias" class="sugerencias"></div>
-            <!-- Ícono del carrito -->
-            <img id="carrito-icon" src="../Recursos/iage.png" alt="Carrito" class="carrito-icon">
-
-            <!-- Carrito flotante -->
-            <div id="carrito-flotante" class="carrito-flotante">
-                <h4>Carrito</h4>
-                <div id="carrito-items"></div>
-                <p id="carrito-total">Total: $0</p>
-            </div>
+        <div class="acciones">
+          <a
+            href="ver_carrito.php"
+            class="btn-icono carrito"
+            aria-label="Carrito"
+          ></a>
+        </div>
+      </div>
     </header>
 
     <!-- Menú -->
@@ -44,8 +39,6 @@
             <a href="index.php" class="link-menu">Inicio</a>
             <a href="productos.php" class="link-menu">Productos</a>
             <a href="soporte.html" class="link-menu">Soporte</a>
-            <a href="login.php">Iniciar sesión</a>
-            <a href="register.php">Registrarse</a>
         </div>
     </nav>
 
@@ -101,10 +94,9 @@
             <div class="col">
                 <h4>Secciones</h4>
                 <ul class="lista">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Soporte</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="../Pages/index.php">Inicio</a></li>
+                    <li><a href="../Pages/productos.php">Productos</a></li>
+                    <li><a href="../Pages/soporte.php">Soporte</a></li>
                 </ul>
             </div>
 
