@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soporte - Tech Orange</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.CSS" />
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <header class="barra">
+      <div class="contenedor fila-barra">
+        <div class="logo">
+          <span class="logo-fuerte">TECH</span>
+          <span class="logo-naranja">ORANGE</span>
+        </div>
+        <div class="buscador">
+          <input
+            type="text"
+            id="inputBuscar"
+            placeholder="Buscar productos..."
+            aria-label="Buscar productos"
+          />
+          <button class="btn-buscar" aria-label="Buscar"></button>
+        </div>
+
+        <!-- contenedor de sugerencias -->
+        <div id="sugerencias" class="sugerencias"></div>
+
+        <div class="acciones">
+          <a
+            href="ver_carrito.php"
+            class="btn-icono carrito"
+            aria-label="Carrito"
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menú -->
+  <nav class="menu">
+        <div class="contenedor fila-menu">
+            <a href="index.php" class="link-menu">Inicio</a>
+            <a href="productos.php" class="link-menu">Productos</a>
+            <a href="soporte.html" class="link-menu">Soporte</a>
+            <a href="login.php">Iniciar sesión</a>
+            <a href="register.php">Registrarse</a>
+        </div>
+    </nav>
+
+    <main>
+      <section class="contenedor soporte">
+        <div class="cabecera-seccion">
+          <h2 class="titulo">SOPORTE</h2>
+          <p class="subtitulo">Respuestas rápidas a dudas frecuentes</p>
+        </div>
+
+        <div class="faq">
+          <article class="faq-item">
+            <h3 class="faq-pregunta">
+              ¿Dónde está la sucursal y cuáles son los horarios?
+            </h3>
+            <p class="faq-respuesta">
+              Estamos en <strong>María Curie 2375, Neuquén Capital</strong>.
+              Horario: <strong>lun a vie 9:00–18:00</strong> y
+              <strong>sáb 10:00–13:00</strong>.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">¿Qué medios de pago aceptan?</h3>
+            <p class="faq-respuesta">
+              Efectivo, tarjeta de crédito y débito, transferencia y billeteras
+              virtuales. Consultá promos vigentes en caja.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">¿Hacen envíos?</h3>
+            <p class="faq-respuesta">
+              Sí, envíos a todo el país por correo, y mensajería local en el día
+              (según zona). También podés
+              <strong>retirar en sucursal</strong> sin costo.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">Garantía y cambios</h3>
+            <p class="faq-respuesta">
+              Todos los productos tienen
+              <strong>garantía oficial del fabricante</strong> (generalmente 12
+              meses). Para cambios o devoluciones, presentá el producto con su
+              embalaje y la factura. Si está fallado, gestionamos el
+              <strong>RMA</strong> con el servicio técnico.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">Soporte técnico</h3>
+            <p class="faq-respuesta">
+              Si tenés un problema, escribinos a
+              <a href="mailto:TechInformatica@gmail.com"
+                >TechInformatica@gmail.com</a
+              >
+              con número de compra, modelo y descripción del fallo. Te
+              respondemos con los pasos a seguir.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">¿Cómo facturan?</h3>
+            <p class="faq-respuesta">
+              Emitimos <strong>Factura A o B</strong>. Pasanos tus datos al
+              momento de la compra o por email si compraste online.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">¿Puedo reservar precio y stock?</h3>
+            <p class="faq-respuesta">
+              El precio se congela al <strong>confirmar la compra</strong>. Las
+              reservas sin seña pueden cambiar según disponibilidad.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">Instalación y armado</h3>
+            <p class="faq-respuesta">
+              Podemos armar PC y configurar periféricos. Consultá costos y
+              turnos disponibles.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">¿Cómo hago seguimiento de mi pedido?</h3>
+            <p class="faq-respuesta">
+              Te enviamos el número de guía por email. Con mensajería local, te
+              avisamos por WhatsApp antes de entregar.
+            </p>
+          </article>
+
+          <article class="faq-item">
+            <h3 class="faq-pregunta">Contacto rápido</h3>
+            <p class="faq-respuesta">
+              Tel: <strong>2996286057</strong> · Email:
+              <a href="mailto:laurang2018@gmail.com">laurang2018@gmail.com</a> ·
+              Sucursal: <strong>María Curie 2375</strong>.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie-grid">
+        <div class="col">
+          <h4>Secciones</h4>
+          <ul class="lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Contacto</h4>
+          <ul class="contacto">
+            <li>2996286057</li>
+            <li>
+              <a href="mailto:laurang2018@gmail.com">laurang2018@gmail.com</a>
+            </li>
+            <li>
+              <a href="mailto:TechInformatica@gmail.com"
+                >TechInformatica@gmail.com</a
+              >
+            </li>
+          </ul>
+          <div class="chips">
+            <a href="#" class="chip">Ayuda</a>
+            <a href="#" class="chip">Soporte técnico</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4>Ubicación</h4>
+          <p>Maria Curie 2375, Neuquén Capital Q8300 CP</p>
+          <div class="mapa placeholder" aria-label="Mapa"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../JS/buscador.js"></script>
+</html>

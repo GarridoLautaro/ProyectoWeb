@@ -1,0 +1,113 @@
+#carrito-flotante {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 320px;
+  background: var(--blanco);
+  box-shadow: var(--sombra);
+  border-radius: var(--radio-xl);
+  padding: 20px;
+  z-index: 999;
+  display: none;
+  border: 1px solid var(--borde);
+}
+
+#carrito-flotante h4 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--naranja);
+  text-align: center;
+}
+
+.carrito-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.carrito-img {
+  width: 55px;
+  height: 55px;
+  border-radius: var(--radio-md);
+  object-fit: cover;
+  background: #fff;
+}
+
+.carrito-nombre {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--texto);
+}
+
+.carrito-precio {
+  margin: 4px 0 0;
+  font-weight: 800;
+  color: var(--naranja);
+  font-size: 14px;
+}
+
+#carrito-total {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: right;
+  color: var(--texto);
+}
+
+.btn-carrito {
+  width: 100%;
+  margin-top: 8px;
+  background: var(--naranja);
+  border: none;
+  padding: 8px;
+  color: #fff;
+  border-radius: var(--radio-md);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-carrito:hover {
+  background: #e56d00;
+}
+
+.btn-eliminar {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: var(--radio-md);
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background: #e63939;
+}
+
+/* Botón flotante abrir carrito */
+#btn-carrito-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background: var(--naranja);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--sombra);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-carrito-flotante img {
+  width: 30px;
+  height: 30px;
+}
